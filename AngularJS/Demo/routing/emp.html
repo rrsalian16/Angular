@@ -1,0 +1,19 @@
+<div class="container">
+    
+    <table class="table table-light">
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat='emp in empList'>
+                <td>{{emp.id}}</td>
+                <td>{{emp.employee_name}}</td>
+                <td>{{emp.employee_age}}</td>
+                <td>{{emp.employee_salary}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

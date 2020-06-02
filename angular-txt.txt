@@ -1,0 +1,26 @@
+
+node --version
+npm --version
+
+
+#Step-1: Install angular cli
+npm install - g @angular/cli
+
+#Step-2: Create new project by this command
+#Choose yes for routing option and, CSS or SCSS.
+ng new myNewApp
+
+cd myNewApp
+
+ng serve
+
+
+#use version 3 of the bootstrap framework
+npm install --save bootstrap@3
+
+ng g c my-second-component
+
+ng generate component component_name
+ng generate service service_name
+ng generate directive directive_name
+

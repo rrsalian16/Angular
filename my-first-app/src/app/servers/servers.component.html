@@ -1,0 +1,18 @@
+<!-- <input class="form-control" type="text" (input)="onInputEvent($event)"> -->
+<input class="form-control" type="text" [(ngModel)]="serverName">
+
+<p>{{serverName}} </p>
+<button class="btn btn-primary" 
+[disabled]="!allowed"
+(click)="onCreationServer()"
+>add server</button>
+
+<!-- <p>{{serverCreationStatus}} </p> -->
+
+<p *ngIf="serverCreated">server was created {{serverName}} </p>
+<app-server *ngFor="let i of servers"></app-server>
+
+<button class="btm btn-primary" (click)="toogleButton()">toggel</button>
+<p *ngIf="!toggle" >password is : 1234</p>
+
+<p *ngFor="let item of log; let i=index" [ngStyle]="{'background-color': i>4?'blue':'green'}" >{{item}} , {{i}}</p>
